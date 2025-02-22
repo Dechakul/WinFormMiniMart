@@ -39,12 +39,16 @@
             // 
             // dgvEmployees
             // 
+            dgvEmployees.AllowUserToAddRows = false;
+            dgvEmployees.AllowUserToDeleteRows = false;
             dgvEmployees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEmployees.Location = new Point(12, 89);
             dgvEmployees.Margin = new Padding(3, 2, 3, 2);
             dgvEmployees.Name = "dgvEmployees";
+            dgvEmployees.ReadOnly = true;
             dgvEmployees.RowHeadersWidth = 51;
-            dgvEmployees.Size = new Size(680, 235);
+            dgvEmployees.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvEmployees.Size = new Size(762, 258);
             dgvEmployees.TabIndex = 0;
             dgvEmployees.CellDoubleClick += dgvEmployees_CellDoubleClick;
             dgvEmployees.CellMouseUp += dgvEmployees_CellMouseUp;
@@ -107,7 +111,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(706, 335);
+            ClientSize = new Size(786, 358);
             Controls.Add(label1);
             Controls.Add(txtSearch);
             Controls.Add(button3);

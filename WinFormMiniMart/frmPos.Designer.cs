@@ -34,6 +34,7 @@
             groupBox1 = new GroupBox();
             label7 = new Label();
             label6 = new Label();
+            lblNetPrice = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
@@ -46,7 +47,6 @@
             btnClear = new Button();
             btnSave = new Button();
             btnCancel = new Button();
-            lblNetPrice = new Label();
             label1 = new Label();
             label2 = new Label();
             groupBox1.SuspendLayout();
@@ -119,6 +119,17 @@
             label6.Size = new Size(37, 15);
             label6.TabIndex = 14;
             label6.Text = "จำนวน";
+            // 
+            // lblNetPrice
+            // 
+            lblNetPrice.BackColor = Color.FromArgb(192, 255, 192);
+            lblNetPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNetPrice.Location = new Point(514, 32);
+            lblNetPrice.Name = "lblNetPrice";
+            lblNetPrice.Size = new Size(208, 36);
+            lblNetPrice.TabIndex = 8;
+            lblNetPrice.Text = "0.00";
+            lblNetPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
@@ -238,17 +249,6 @@
             btnCancel.Text = "ยกเลิกรายการ";
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
-            // 
-            // lblNetPrice
-            // 
-            lblNetPrice.BackColor = SystemColors.AppWorkspace;
-            lblNetPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNetPrice.Location = new Point(514, 32);
-            lblNetPrice.Name = "lblNetPrice";
-            lblNetPrice.Size = new Size(208, 36);
-            lblNetPrice.TabIndex = 8;
-            lblNetPrice.Text = "0.00";
-            lblNetPrice.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // label1
             // 
