@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             menuStrip1 = new MenuStrip();
-            จดการToolStripMenuItem = new ToolStripMenuItem();
+            mnu_Products = new ToolStripMenuItem();
+            mnu_Categories = new ToolStripMenuItem();
+            mnu_Employees = new ToolStripMenuItem();
             mnu_logout2 = new ToolStripMenuItem();
             menuStrip2 = new MenuStrip();
             mnu_Login = new ToolStripMenuItem();
@@ -37,11 +39,7 @@
             menuStrip3 = new MenuStrip();
             mnu_sell = new ToolStripMenuItem();
             ขายสนคาToolStripMenuItem = new ToolStripMenuItem();
-            รายงานยอดขายToolStripMenuItem = new ToolStripMenuItem();
             mnu_logout1 = new ToolStripMenuItem();
-            mnu_Employees = new ToolStripMenuItem();
-            mnu_Categories = new ToolStripMenuItem();
-            mnu_Products = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             menuStrip2.SuspendLayout();
             menuStrip3.SuspendLayout();
@@ -50,7 +48,7 @@
             // menuStrip1
             // 
             menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { จดการToolStripMenuItem, mnu_Products, mnu_Categories, mnu_Employees, mnu_logout2 });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { mnu_Products, mnu_Categories, mnu_Employees, mnu_logout2 });
             menuStrip1.Location = new Point(0, 48);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Padding = new Padding(5, 2, 0, 2);
@@ -58,11 +56,26 @@
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
-            // จดการToolStripMenuItem
+            // mnu_Products
             // 
-            จดการToolStripMenuItem.Name = "จดการToolStripMenuItem";
-            จดการToolStripMenuItem.Size = new Size(49, 20);
-            จดการToolStripMenuItem.Text = "จัดการ";
+            mnu_Products.Name = "mnu_Products";
+            mnu_Products.Size = new Size(74, 20);
+            mnu_Products.Text = "จัดการสินค้า";
+            mnu_Products.Click += mnu_Products_Click;
+            // 
+            // mnu_Categories
+            // 
+            mnu_Categories.Name = "mnu_Categories";
+            mnu_Categories.Size = new Size(107, 20);
+            mnu_Categories.Text = "จัดการประเภทสินค้า";
+            mnu_Categories.Click += mnu_Categories_Click;
+            // 
+            // mnu_Employees
+            // 
+            mnu_Employees.Name = "mnu_Employees";
+            mnu_Employees.Size = new Size(88, 20);
+            mnu_Employees.Text = "จัดการพนักงาน";
+            mnu_Employees.Click += mnu_Employees_Click;
             // 
             // mnu_logout2
             // 
@@ -100,7 +113,7 @@
             // menuStrip3
             // 
             menuStrip3.ImageScalingSize = new Size(20, 20);
-            menuStrip3.Items.AddRange(new ToolStripItem[] { mnu_sell, รายงานยอดขายToolStripMenuItem, mnu_logout1 });
+            menuStrip3.Items.AddRange(new ToolStripItem[] { mnu_sell, mnu_logout1 });
             menuStrip3.Location = new Point(0, 0);
             menuStrip3.Name = "menuStrip3";
             menuStrip3.Padding = new Padding(5, 2, 0, 2);
@@ -119,14 +132,8 @@
             // ขายสนคาToolStripMenuItem
             // 
             ขายสนคาToolStripMenuItem.Name = "ขายสนคาToolStripMenuItem";
-            ขายสนคาToolStripMenuItem.Size = new Size(180, 22);
+            ขายสนคาToolStripMenuItem.Size = new Size(117, 22);
             ขายสนคาToolStripMenuItem.Text = "ขายสินค้า";
-            // 
-            // รายงานยอดขายToolStripMenuItem
-            // 
-            รายงานยอดขายToolStripMenuItem.Name = "รายงานยอดขายToolStripMenuItem";
-            รายงานยอดขายToolStripMenuItem.Size = new Size(89, 20);
-            รายงานยอดขายToolStripMenuItem.Text = "รายงานยอดขาย";
             // 
             // mnu_logout1
             // 
@@ -134,27 +141,6 @@
             mnu_logout1.Size = new Size(79, 20);
             mnu_logout1.Text = "ออกจากระบบ";
             mnu_logout1.Click += mnu_logout1_Click;
-            // 
-            // mnu_Employees
-            // 
-            mnu_Employees.Name = "mnu_Employees";
-            mnu_Employees.Size = new Size(88, 20);
-            mnu_Employees.Text = "จัดการพนักงาน";
-            mnu_Employees.Click += mnu_Employees_Click;
-            // 
-            // mnu_Categories
-            // 
-            mnu_Categories.Name = "mnu_Categories";
-            mnu_Categories.Size = new Size(107, 20);
-            mnu_Categories.Text = "จัดการประเภทสินค้า";
-            mnu_Categories.Click += mnu_Categories_Click;
-            // 
-            // mnu_Products
-            // 
-            mnu_Products.Name = "mnu_Products";
-            mnu_Products.Size = new Size(74, 20);
-            mnu_Products.Text = "จัดการสินค้า";
-            mnu_Products.Click += mnu_Products_Click;
             // 
             // main
             // 
@@ -184,7 +170,6 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem จดการToolStripMenuItem;
         private MenuStrip menuStrip2;
         private MenuStrip menuStrip3;
         private ToolStripMenuItem mnu_Login;
@@ -193,7 +178,6 @@
         private ToolStripMenuItem mnu_logout2;
         private ToolStripMenuItem mnu_logout1;
         private ToolStripMenuItem ขายสนคาToolStripMenuItem;
-        private ToolStripMenuItem รายงานยอดขายToolStripMenuItem;
         private ToolStripMenuItem mnu_Employees;
         private ToolStripMenuItem mnu_Products;
         private ToolStripMenuItem mnu_Categories;

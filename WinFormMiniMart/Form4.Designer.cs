@@ -67,7 +67,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(24, 202);
+            label6.Location = new Point(141, 205);
             label6.Name = "label6";
             label6.Size = new Size(72, 15);
             label6.TabIndex = 16;
@@ -166,7 +166,7 @@
             cmbDiscontinued.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cmbDiscontinued.FormattingEnabled = true;
             cmbDiscontinued.Items.AddRange(new object[] { "พร้อมจำหน่าย", "เลิกจำหน่าย" });
-            cmbDiscontinued.Location = new Point(24, 219);
+            cmbDiscontinued.Location = new Point(141, 222);
             cmbDiscontinued.Margin = new Padding(3, 2, 3, 2);
             cmbDiscontinued.Name = "cmbDiscontinued";
             cmbDiscontinued.Size = new Size(218, 38);

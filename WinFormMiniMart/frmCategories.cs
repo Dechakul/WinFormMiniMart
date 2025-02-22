@@ -1,4 +1,4 @@
-using Microsoft.Data.SqlClient;
+﻿using Microsoft.Data.SqlClient;
 using System.Data;
 
 namespace WinFormMiniMart
@@ -54,7 +54,7 @@ namespace WinFormMiniMart
 
             if (string.IsNullOrEmpty(txtCategoryName.Text))
             {
-                MessageBox.Show("���ͻ������Թ��ҵ�ͧ��ҧ");
+                MessageBox.Show("กรุณาใส่ข้อมูลที่ต้องการเพิ่ม");
                 return;
             }
 
@@ -74,12 +74,12 @@ namespace WinFormMiniMart
         {
             if (string.IsNullOrEmpty(txtCategoryID.Text))
             {
-                MessageBox.Show("��س����͡�����š�͹");
+                MessageBox.Show("กรุณาเลือกข้อมูลที่ต้องการแก้ไข");
                 return;
             }
             if (string.IsNullOrEmpty(txtCategoryName.Text))
             {
-                MessageBox.Show("���ͻ������Թ��ҵ�ͧ��ҧ");
+                MessageBox.Show("ข้อมูลที่ต้องการแก้ไข");
                 return;
             }
 
@@ -101,10 +101,10 @@ namespace WinFormMiniMart
         {
             if (string.IsNullOrEmpty(txtCategoryID.Text))
             {
-                MessageBox.Show("��س����͡�����š�͹");
+                MessageBox.Show("กรุณาเลือกข้อมูลที่ต้องการลบ");
                 return;
             }
-            if (MessageBox.Show("��ͧ���ź�����Ź���������", "�ô�׹�ѹ", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show("กดยืนยันเพื่อลบข้อมูล", "ยืนยัน", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 return;
             }
@@ -123,7 +123,7 @@ namespace WinFormMiniMart
             catch (Exception ex)
             {
 
-                MessageBox.Show("�Դ��ͼԴ��Ҵ :" + Environment.NewLine + ex.Message, "�������öź��������");
+                MessageBox.Show("à¡Ô´¢éÍ¼Ô´¾ÅÒ´ :" + Environment.NewLine + ex.Message, "äÁèÊÒÁÒÃ¶Åº¢éÍÁÙÅä´é");
             }
         }
 

@@ -62,7 +62,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(11, 19);
+            label1.Location = new Point(112, 19);
             label1.Name = "label1";
             label1.Size = new Size(83, 15);
             label1.TabIndex = 1;
@@ -71,7 +71,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(11, 51);
+            label2.Location = new Point(112, 51);
             label2.Name = "label2";
             label2.Size = new Size(78, 15);
             label2.TabIndex = 2;
@@ -80,7 +80,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(11, 83);
+            label3.Location = new Point(112, 83);
             label3.Name = "label3";
             label3.Size = new Size(55, 15);
             label3.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             // txtCategoryID
             // 
-            txtCategoryID.Location = new Point(125, 16);
+            txtCategoryID.Location = new Point(226, 16);
             txtCategoryID.Margin = new Padding(3, 2, 3, 2);
             txtCategoryID.Name = "txtCategoryID";
             txtCategoryID.Size = new Size(300, 23);
@@ -96,7 +96,7 @@
             // 
             // txtCategoryName
             // 
-            txtCategoryName.Location = new Point(125, 48);
+            txtCategoryName.Location = new Point(226, 48);
             txtCategoryName.Margin = new Padding(3, 2, 3, 2);
             txtCategoryName.Name = "txtCategoryName";
             txtCategoryName.Size = new Size(300, 23);
@@ -104,7 +104,7 @@
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(125, 83);
+            txtDescription.Location = new Point(226, 83);
             txtDescription.Margin = new Padding(3, 2, 3, 2);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
