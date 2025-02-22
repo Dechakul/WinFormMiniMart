@@ -85,11 +85,11 @@ namespace WinFormMiniMart
                 + " , Position from employees where employeeID = @employeeID";
                 SqlCommand comm = new SqlCommand(sql, conn);
                 comm.Parameters.AddWithValue("@employeeID", txtEmployeeID.Text);
-                if(conn.State == ConnectionState.Closed)
+                if (conn.State == ConnectionState.Closed)
                 {
                     conn.Open();
                 }
-                
+
                 SqlDataReader dr = comm.ExecuteReader();
                 if (dr.HasRows)
                 {
@@ -233,7 +233,7 @@ namespace WinFormMiniMart
                         msg += lsvProduct.Items[i].SubItems[0].Text + ", ";
                         msg += lsvProduct.Items[i].SubItems[1].Text + ", ";
                         msg += lsvProduct.Items[i].SubItems[2].Text + ", ";
-                        msg += lsvProduct.Items[i].SubItems[3].Text + ", "+Environment.NewLine;
+                        msg += lsvProduct.Items[i].SubItems[3].Text + ", " + Environment.NewLine;
                     }
                     tr.Commit();
                     conn.Close();
@@ -273,6 +273,11 @@ namespace WinFormMiniMart
                 dr.Close();
                 conn.Close();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

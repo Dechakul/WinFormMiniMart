@@ -41,6 +41,7 @@
             // 
             dgvEmployees.AllowUserToAddRows = false;
             dgvEmployees.AllowUserToDeleteRows = false;
+            dgvEmployees.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             dgvEmployees.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dgvEmployees.Location = new Point(12, 89);
             dgvEmployees.Margin = new Padding(3, 2, 3, 2);

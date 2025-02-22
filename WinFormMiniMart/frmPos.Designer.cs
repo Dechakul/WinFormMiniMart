@@ -31,7 +31,6 @@
             txtEmployeeID = new TextBox();
             txtEmployeeName = new TextBox();
             txtProductID = new TextBox();
-            groupBox1 = new GroupBox();
             label7 = new Label();
             label6 = new Label();
             lblNetPrice = new Label();
@@ -49,12 +48,11 @@
             btnCancel = new Button();
             label1 = new Label();
             label2 = new Label();
-            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // txtEmployeeID
             // 
-            txtEmployeeID.Location = new Point(131, 28);
+            txtEmployeeID.Location = new Point(213, 61);
             txtEmployeeID.Margin = new Padding(3, 2, 3, 2);
             txtEmployeeID.Name = "txtEmployeeID";
             txtEmployeeID.Size = new Size(110, 23);
@@ -63,7 +61,7 @@
             // 
             // txtEmployeeName
             // 
-            txtEmployeeName.Location = new Point(344, 30);
+            txtEmployeeName.Location = new Point(426, 63);
             txtEmployeeName.Margin = new Padding(3, 2, 3, 2);
             txtEmployeeName.Name = "txtEmployeeName";
             txtEmployeeName.ReadOnly = true;
@@ -72,40 +70,17 @@
             // 
             // txtProductID
             // 
-            txtProductID.Location = new Point(5, 42);
+            txtProductID.Location = new Point(32, 99);
             txtProductID.Margin = new Padding(3, 2, 3, 2);
             txtProductID.Name = "txtProductID";
             txtProductID.Size = new Size(110, 23);
             txtProductID.TabIndex = 2;
             txtProductID.KeyDown += txtProductID_KeyDown;
             // 
-            // groupBox1
-            // 
-            groupBox1.Controls.Add(label7);
-            groupBox1.Controls.Add(label6);
-            groupBox1.Controls.Add(lblNetPrice);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(lsvProduct);
-            groupBox1.Controls.Add(txtTotal);
-            groupBox1.Controls.Add(txtQuantity);
-            groupBox1.Controls.Add(txtUnitPrice);
-            groupBox1.Controls.Add(txtProductName);
-            groupBox1.Controls.Add(txtProductID);
-            groupBox1.Location = new Point(12, 71);
-            groupBox1.Margin = new Padding(3, 2, 3, 2);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(3, 2, 3, 2);
-            groupBox1.Size = new Size(728, 265);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "รายการสั่งซื้อ";
-            // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(430, 25);
+            label7.Location = new Point(32, 300);
             label7.Name = "label7";
             label7.Size = new Size(24, 15);
             label7.TabIndex = 15;
@@ -114,7 +89,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(343, 25);
+            label6.Location = new Point(32, 246);
             label6.Name = "label6";
             label6.Size = new Size(37, 15);
             label6.TabIndex = 14;
@@ -124,9 +99,9 @@
             // 
             lblNetPrice.BackColor = Color.FromArgb(192, 255, 192);
             lblNetPrice.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblNetPrice.Location = new Point(514, 32);
+            lblNetPrice.Location = new Point(545, 356);
             lblNetPrice.Name = "lblNetPrice";
-            lblNetPrice.Size = new Size(208, 36);
+            lblNetPrice.Size = new Size(306, 36);
             lblNetPrice.TabIndex = 8;
             lblNetPrice.Text = "0.00";
             lblNetPrice.TextAlign = ContentAlignment.MiddleLeft;
@@ -134,7 +109,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(237, 25);
+            label5.Location = new Point(32, 197);
             label5.Name = "label5";
             label5.Size = new Size(47, 15);
             label5.TabIndex = 13;
@@ -143,7 +118,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(121, 24);
+            label4.Location = new Point(32, 140);
             label4.Name = "label4";
             label4.Size = new Size(45, 15);
             label4.TabIndex = 12;
@@ -152,7 +127,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(5, 24);
+            label3.Location = new Point(32, 81);
             label3.Name = "label3";
             label3.Size = new Size(50, 15);
             label3.TabIndex = 11;
@@ -160,17 +135,17 @@
             // 
             // lsvProduct
             // 
-            lsvProduct.Location = new Point(5, 75);
+            lsvProduct.Location = new Point(160, 99);
             lsvProduct.Margin = new Padding(3, 2, 3, 2);
             lsvProduct.Name = "lsvProduct";
-            lsvProduct.Size = new Size(717, 178);
+            lsvProduct.Size = new Size(717, 241);
             lsvProduct.TabIndex = 7;
             lsvProduct.UseCompatibleStateImageBehavior = false;
             lsvProduct.DoubleClick += lsvProduct_DoubleClick;
             // 
             // txtTotal
             // 
-            txtTotal.Location = new Point(430, 42);
+            txtTotal.Location = new Point(32, 317);
             txtTotal.Margin = new Padding(3, 2, 3, 2);
             txtTotal.Name = "txtTotal";
             txtTotal.ReadOnly = true;
@@ -179,7 +154,7 @@
             // 
             // txtQuantity
             // 
-            txtQuantity.Location = new Point(343, 42);
+            txtQuantity.Location = new Point(32, 263);
             txtQuantity.Margin = new Padding(3, 2, 3, 2);
             txtQuantity.Name = "txtQuantity";
             txtQuantity.Size = new Size(81, 23);
@@ -188,7 +163,7 @@
             // 
             // txtUnitPrice
             // 
-            txtUnitPrice.Location = new Point(237, 42);
+            txtUnitPrice.Location = new Point(32, 214);
             txtUnitPrice.Margin = new Padding(3, 2, 3, 2);
             txtUnitPrice.Name = "txtUnitPrice";
             txtUnitPrice.ReadOnly = true;
@@ -198,7 +173,7 @@
             // 
             // txtProductName
             // 
-            txtProductName.Location = new Point(121, 42);
+            txtProductName.Location = new Point(32, 158);
             txtProductName.Margin = new Padding(3, 2, 3, 2);
             txtProductName.Name = "txtProductName";
             txtProductName.ReadOnly = true;
@@ -207,7 +182,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(107, 353);
+            btnAdd.Location = new Point(32, 353);
             btnAdd.Margin = new Padding(3, 2, 3, 2);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(101, 39);
@@ -218,7 +193,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(267, 353);
+            btnClear.Location = new Point(160, 353);
             btnClear.Margin = new Padding(3, 2, 3, 2);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(101, 39);
@@ -230,7 +205,7 @@
             // btnSave
             // 
             btnSave.Enabled = false;
-            btnSave.Location = new Point(419, 353);
+            btnSave.Location = new Point(292, 353);
             btnSave.Margin = new Padding(3, 2, 3, 2);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(101, 39);
@@ -241,7 +216,7 @@
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(571, 353);
+            btnCancel.Location = new Point(411, 353);
             btnCancel.Margin = new Padding(3, 2, 3, 2);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(101, 39);
@@ -253,7 +228,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(53, 30);
+            label1.Location = new Point(135, 63);
             label1.Name = "label1";
             label1.Size = new Size(64, 15);
             label1.TabIndex = 9;
@@ -262,7 +237,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(267, 30);
+            label2.Location = new Point(349, 63);
             label2.Name = "label2";
             label2.Size = new Size(44, 15);
             label2.TabIndex = 10;
@@ -272,22 +247,31 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(752, 417);
+            ClientSize = new Size(889, 453);
+            Controls.Add(label7);
             Controls.Add(label2);
+            Controls.Add(label6);
             Controls.Add(label1);
+            Controls.Add(lblNetPrice);
             Controls.Add(btnCancel);
+            Controls.Add(label5);
             Controls.Add(btnSave);
+            Controls.Add(label4);
             Controls.Add(btnClear);
+            Controls.Add(label3);
             Controls.Add(btnAdd);
-            Controls.Add(groupBox1);
+            Controls.Add(lsvProduct);
+            Controls.Add(txtTotal);
+            Controls.Add(txtQuantity);
             Controls.Add(txtEmployeeName);
+            Controls.Add(txtUnitPrice);
             Controls.Add(txtEmployeeID);
+            Controls.Add(txtProductName);
+            Controls.Add(txtProductID);
             Margin = new Padding(3, 2, 3, 2);
             Name = "frmPos";
             Text = "frmPos";
             Load += frmPos_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -297,7 +281,6 @@
         private TextBox txtEmployeeID;
         private TextBox txtEmployeeName;
         private TextBox txtProductID;
-        private GroupBox groupBox1;
         private TextBox txtTotal;
         private TextBox txtQuantity;
         private TextBox txtUnitPrice;
